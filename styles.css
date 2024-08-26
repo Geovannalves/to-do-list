@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(128, 40, 113);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e4b8e6;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(223, 5, 5, 0.1);
+}
+
+#formTarefa{
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(196, 49, 74);
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#entradaTarefa {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    
+}
+
+#botaoAdicionar {
+    padding: 10px 20px;
+    border: none;
+    background-color: #d1b7cb;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#botaoAdicionar:hover {
+    background-color: #b30095;
+}
+
+.secoes-tarefas {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: rgb(196, 49, 74);
+}
+
+.tarefas-pendentes, .tarefas-concluidas {
+    flex: 1;
+}
+
+.tarefas-pendentes ul, .tarefas-concluidas ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+button.remove, button.complete {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button.remove {
+    background-color: #dc3545;
+    color: #fff;
+    margin-left: 10px;
+}
+
+button.remove:hover {
+    background-color: #c82333;
+}
+
+button.complete {
+    background-color: #28a745;
+    color: #fff;
+    margin-left: 10px;
+}
+
+button.complete:hover {
+    background-color: #218838;
+}
